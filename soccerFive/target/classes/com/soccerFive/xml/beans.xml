@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="profile" class="com.soccerFive.beans.Profile" lazy-init="true">
+		
+		<property name="player">
+			
+			<bean id="player" class="com.soccerFive.beans.Player" lazy-init="true">
+			
+			</bean>
+		
+		</property>
+		
+			
+		
+	</bean>
+
+	
+	<bean id="reservation" class="com.soccerFive.beans.Reservation"  lazy-init="true">
+		
+	</bean>
+
+	<bean id="field_sc" class="com.soccerFive.beans.SoccerField" lazy-init="true">
+		
+	</bean>
+	
+	<bean id="user" class="com.soccerFive.beans.User" lazy-init="true">
+		
+	</bean>
+	
+
+</beans>
